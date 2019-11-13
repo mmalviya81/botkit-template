@@ -50,16 +50,9 @@ module.exports = function (controller) {
         }, */
 
         bot.startConversation(message, function (err, convo) {
-            //convo.ask(text)
-            convo.ask("Here is the URL? ", [
-               {
-                    pattern: "url|URL|Hello|Hi",
-                    callback: function (response, convo) {
-                        convo.ask(text)
-                        convo.next();                      
-                        //convo.gotoThread('ask_drink');
-                    },
-                },
+            convo.ask(text)
+            convo.ask("Which tool URL are you looking? ", [
+            
                 {
                     pattern: "CCW|CONTRACT",
                     callback: function (response, convo) {
