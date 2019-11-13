@@ -53,7 +53,7 @@ module.exports = function (controller) {
             convo.ask(text)
             convo.ask("Which tool URL are you looking? ", [
                 {
-                    pattern: "CCW",
+                    pattern: "CCW|CONTRACT",
                     callback: function (response, convo) {
                         convo.say("CCW | Prod | https://ccrc.cisco.com/ServiceContract/contract/?code=P7BDT6sAhr9UJ9_0XlzBe2lKj1G31wDViQoC1ADK&state=xyz");
                         convo.say("CCW | Stage | https://cdca-stage.cloudapps.cisco.com/cdca/portal.do");
