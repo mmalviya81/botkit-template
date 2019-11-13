@@ -19,7 +19,7 @@ module.exports = function (controller) {
         });
     }); */
 
-    controller.hears(["url","URL","Hello","Hi"], 'direct_message,direct_mention', function (bot, message) {
+    controller.hears(["url","URL","Hello","Hi","CCW","CCW-Contract search ","CDT SR","CPR","CSONE ","CSONE","Dashboard","DM Info","E2 Open CSR Case","E2Net","E2Open","Eco Matrix","EEM","GOM Wiki Page","Histroy of CntrctHistory ","IP","Legacy Sort","Mule","MuleSoft","New URL","OFS - Vise FE direct link: ","OPS Report","Oracle EBS","OSC - FSMS","Pega ","Pega Location form","PRR","PSD-ESRI","SAM","Test RMA creation","Tracer","Xelus","Umpire"], 'direct_message,direct_mention', function (bot, message) {
         var text = "We are currently have Url for,";
         text +="\n- " +bot.enrichCommand(message, ".CCW") + " | "+	bot.enrichCommand(message, ".CDT SR") + "|"+	bot.enrichCommand(message, ".CPR");
         text += "\n- " +bot.enrichCommand(message, ".CSONE")	+ "|"+bot.enrichCommand(message, ".Dashboard")+ "|"+	bot.enrichCommand(message, ".DM Info");
